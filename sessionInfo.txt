@@ -1,0 +1,22 @@
+Software versions used for the analyses
+
+R version 4.4.1 (2024-06-14), platform x86_64-pc-linux-gnu
+
+Packages:
+  data.table 1.18.0
+  glmnet 4.1.10
+  survival 3.8.3
+  splines 4.4.1 (base)
+  caret 7.0.1
+  MatchIt 4.7.2
+  ggplot2 4.0.1
+  lme4 1.1.38
+  patchwork 1.3.2
+  doParallel 1.0.17
+  sandwich 3.1.1
+  mgcv 1.9.4
+  ggrepel 0.9.6
+  readxl 1.4.5
+
+The figures were assembled with ggplot2 and patchwork; the supplementary material and the reporting checklists are
+built by the Perl scripts in this folder and converted to PDF with LibreOffice.
