@@ -1,0 +1,15 @@
+%!PS
+% Figure 2E axis titles: replace "% difference per unit of WC/proWC" with the coefficient scale actually plotted.
+/Helvetica-Bold findfont dup length dict begin { 1 index /FID ne { def } { pop pop } ifelse } forall
+  /Encoding ISOLatin1Encoding def currentdict end /HBL exch definefont pop
+<< /EndPage { exch pop 2 ne {
+  gsave
+  % x-axis title (horizontal), original box x 259.85-353.47, y(top) 518.85-525.43 on an 842-pt page
+  1 setgray 257.5 315.4 98.5 9.0 rectfill
+  0 setgray /HBL findfont 5.89 scalefont setfont
+  306.66 317.82 moveto (WC coefficient \327100 \(NPX per cm\)) dup stringwidth pop -0.5 mul 0 rmoveto show
+  % y-axis title (rotated 90 degrees), original box x 203.57-210.15, y(top) 350.73-455.85
+  1 setgray 202.3 384.9 9.2 107.6 rectfill
+  0 setgray 208.90 438.71 translate 90 rotate
+  0 0 moveto (proWC coefficient \327100 \(NPX per cm\)) dup stringwidth pop -0.5 mul 0 rmoveto show
+  grestore true } { false } ifelse } bind >> setpagedevice

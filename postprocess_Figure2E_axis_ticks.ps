@@ -1,0 +1,9 @@
+%!PS
+% Figure 2E x-axis ticks are at -5, -2.5, 0, 2.5 and 5; the drawn labels "-2" and "3" are replaced.
+<< /EndPage { exch pop 2 ne {
+  gsave
+  1 setgray 260.6 325.2 6.6 5.2 rectfill 327.4 325.2 4.6 5.2 rectfill
+  0.302 setgray /Helvetica findfont 5.7 scalefont setfont
+  263.89 326.35 moveto (-2.5) dup stringwidth pop -0.5 mul 0 rmoveto show
+  329.67 326.35 moveto (2.5) dup stringwidth pop -0.5 mul 0 rmoveto show
+  grestore true } { false } ifelse } bind >> setpagedevice
